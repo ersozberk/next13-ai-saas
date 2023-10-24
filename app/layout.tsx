@@ -21,7 +21,6 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider localization={trTR}>
       <html lang="en" suppressHydrationWarning>
         
         <body className={font.className}>
@@ -30,6 +29,5 @@ export default async function RootLayout({
           {children}
         </body>
       </html>
-    </ClerkProvider>
   )
 }
